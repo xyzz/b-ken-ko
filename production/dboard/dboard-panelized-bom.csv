@@ -1,0 +1,7 @@
+Comment,Designator,Footprint,LCSC
+Conn_01x04,J2,random-keyboard-parts:JST-SR-4,
+5.1k,"R1,R2",Resistor_SMD:R_0603_1608Metric,C23186
+Mount-M2,"MH1,MH2",MountingHole:MountingHole_3.2mm_M3_Pad_Via,
+1M,R3,Resistor_SMD:R_0805_2012Metric,C17514
+4.7n,C1,Capacitor_SMD:C_0603_1608Metric,C53987
+HRO-TYPE-C-31-M-12,J1,Type-C:HRO-TYPE-C-31-M-12-jlc,C165948

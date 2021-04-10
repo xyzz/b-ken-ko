@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J2
+U 1 1 5C91AFCB
+P 2950 850
+F 0 "J2" H 3030 842 50  0000 L CNN
+F 1 "Conn_01x04" H 3030 751 50  0000 L CNN
+F 2 "random-keyboard-parts:JST-SR-4" H 2950 850 50  0001 C CNN
+F 3 "~" H 2950 850 50  0001 C CNN
+	1    2950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5C91B042
+P 2050 1800
+F 0 "R1" H 2109 1846 50  0000 L CNN
+F 1 "5.1k" H 2109 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1800 50  0001 C CNN
+F 3 "~" H 2050 1800 50  0001 C CNN
+F 4 "C23186" H 2050 1800 50  0001 C CNN "LCSC"
+	1    2050 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5C91B0D9
+P 2050 1200
+F 0 "R2" H 2109 1246 50  0000 L CNN
+F 1 "5.1k" H 2109 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1200 50  0001 C CNN
+F 3 "~" H 2050 1200 50  0001 C CNN
+F 4 "C23186" H 2050 1200 50  0001 C CNN "LCSC"
+	1    2050 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 5C91D023
+P 2750 750
+F 0 "#PWR0103" H 2750 600 50  0001 C CNN
+F 1 "VCC" H 2767 923 50  0000 C CNN
+F 2 "" H 2750 750 50  0001 C CNN
+F 3 "" H 2750 750 50  0001 C CNN
+	1    2750 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C91E0CE
+P 2750 1050
+F 0 "#PWR0104" H 2750 800 50  0001 C CNN
+F 1 "GND" H 2755 877 50  0000 C CNN
+F 2 "" H 2750 1050 50  0001 C CNN
+F 3 "" H 2750 1050 50  0001 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 850  0    50   Input ~ 0
+D-
+Text GLabel 2750 950  0    50   Input ~ 0
+D+
+$Comp
+L Connector_Generic:Conn_01x01 MH1
+U 1 1 5C91EC0E
+P 3400 1600
+F 0 "MH1" H 3479 1642 50  0000 L CNN
+F 1 "Mount-M2" H 3479 1551 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3400 1600 50  0001 C CNN
+F 3 "~" H 3400 1600 50  0001 C CNN
+	1    3400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH2
+U 1 1 5C91EC94
+P 3400 1750
+F 0 "MH2" H 3479 1792 50  0000 L CNN
+F 1 "Mount-M2" H 3479 1701 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3400 1750 50  0001 C CNN
+F 3 "~" H 3400 1750 50  0001 C CNN
+	1    3400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FA116CB
+P 1500 2550
+F 0 "R3" V 1293 2550 50  0000 C CNN
+F 1 "1M" V 1384 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 2550 50  0001 C CNN
+F 3 "~" H 1500 2550 50  0001 C CNN
+F 4 "C17514" H 1500 2550 50  0001 C CNN "LCSC"
+	1    1500 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FA11BA2
+P 1500 2950
+F 0 "C1" V 1248 2950 50  0000 C CNN
+F 1 "4.7n" V 1339 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1538 2800 50  0001 C CNN
+F 3 "~" H 1500 2950 50  0001 C CNN
+F 4 "C53987" H 1500 2950 50  0001 C CNN "LCSC"
+	1    1500 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 2550 1350 2750
+Wire Wire Line
+	1650 2550 1650 2750
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 J1
+U 1 1 5C91AF59
+P 1300 1450
+F 0 "J1" H 1131 2247 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 1131 2141 60  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-jlc" H 1300 1450 60  0001 C CNN
+F 3 "" H 1300 1450 60  0001 C CNN
+F 4 "C165948" H 1300 1450 50  0001 C CNN "LCSC"
+F 5 "0;0;180" H 1300 1450 50  0001 C CNN "JLCPCB_CORRECTION"
+	1    1300 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 2750 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	1250 2750 1350 2750
+Connection ~ 1350 2750
+Wire Wire Line
+	1350 2750 1350 2950
+$Comp
+L power:GND #PWR0106
+U 1 1 5FA1F4A9
+P 1750 2750
+F 0 "#PWR0106" H 1750 2500 50  0001 C CNN
+F 1 "GND" H 1755 2577 50  0000 C CNN
+F 2 "" H 1750 2750 50  0001 C CNN
+F 3 "" H 1750 2750 50  0001 C CNN
+	1    1750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2750 1650 2750
+Connection ~ 1650 2750
+Wire Wire Line
+	1650 2750 1650 2950
+Text GLabel 2950 1600 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	3200 1750 3200 1600
+Wire Wire Line
+	3200 1600 2950 1600
+Connection ~ 3200 1600
+Wire Wire Line
+	1400 1500 1500 1500
+Wire Wire Line
+	1500 1500 1500 1300
+Wire Wire Line
+	1500 1300 1400 1300
+Wire Wire Line
+	1400 1400 1550 1400
+Wire Wire Line
+	1550 1400 1550 1600
+Wire Wire Line
+	1550 1600 1400 1600
+Text GLabel 1750 1300 2    50   Input ~ 0
+D-
+Wire Wire Line
+	1500 1300 1750 1300
+Connection ~ 1500 1300
+Text GLabel 1750 1400 2    50   Input ~ 0
+D+
+Wire Wire Line
+	1550 1400 1750 1400
+Connection ~ 1550 1400
+Wire Wire Line
+	1400 1000 1600 1000
+Wire Wire Line
+	1600 1000 1600 1900
+Wire Wire Line
+	1600 1900 1400 1900
+$Comp
+L power:VCC #PWR0101
+U 1 1 5FA6064C
+P 1800 1000
+F 0 "#PWR0101" H 1800 850 50  0001 C CNN
+F 1 "VCC" H 1815 1173 50  0000 C CNN
+F 2 "" H 1800 1000 50  0001 C CNN
+F 3 "" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1000 1800 1000
+Connection ~ 1600 1000
+Wire Wire Line
+	1400 2000 1700 2000
+Wire Wire Line
+	1700 2000 1700 900 
+Wire Wire Line
+	1700 900  1400 900 
+$Comp
+L power:GND #PWR0102
+U 1 1 5FA62FF0
+P 1800 2000
+F 0 "#PWR0102" H 1800 1750 50  0001 C CNN
+F 1 "GND" H 1805 1827 50  0000 C CNN
+F 2 "" H 1800 2000 50  0001 C CNN
+F 3 "" H 1800 2000 50  0001 C CNN
+	1    1800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2000 1800 2000
+Connection ~ 1700 2000
+Text GLabel 1400 2100 2    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	1400 1200 1950 1200
+Wire Wire Line
+	1950 1800 1400 1800
+Wire Wire Line
+	2150 1200 2150 1800
+$Comp
+L power:GND #PWR0105
+U 1 1 5FA70966
+P 2200 1800
+F 0 "#PWR0105" H 2200 1550 50  0001 C CNN
+F 1 "GND" H 2205 1627 50  0000 C CNN
+F 2 "" H 2200 1800 50  0001 C CNN
+F 3 "" H 2200 1800 50  0001 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1800 2200 1800
+Connection ~ 2150 1800
+NoConn ~ 1400 1100
+NoConn ~ 1400 1700
+$Comp
+L power:GND #PWR0107
+U 1 1 5FA5066E
+P 2950 1250
+F 0 "#PWR0107" H 2950 1000 50  0001 C CNN
+F 1 "GND" H 2955 1077 50  0000 C CNN
+F 2 "" H 2950 1250 50  0001 C CNN
+F 3 "" H 2950 1250 50  0001 C CNN
+	1    2950 1250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
